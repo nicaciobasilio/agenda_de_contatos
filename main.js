@@ -32,9 +32,11 @@ function adicionaLinha() {
     const inputNomeContato = document.getElementById("nome-contato");
     const inputTelefoneContato = document.getElementById("tel-contato");
 
-    if (contatos.includes(inputNomeContato.value)) {
-        alert(`O contato ${inputNomeContato.value} já foi inserido`)
-    } else {
+    if (telefones.includes(inputTelefoneContato.value)) {
+        alert(`O telefone ${inputTelefoneContato.value} já foi inserido`)
+    } /* else if (telefones.includes(inputTelefoneContato.value)) {
+            alert(`O telefone ${inputTelefoneContato.value} já foi inserido`)
+    }*/ else {
         contatos.push(inputNomeContato.value);
         telefones.push(parseFloat(inputTelefoneContato.value));
     
