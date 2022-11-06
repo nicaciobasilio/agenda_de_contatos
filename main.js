@@ -33,10 +33,10 @@ function adicionaLinha() {
     const inputTelefoneContato = document.getElementById("tel-contato");
 
     if (telefones.includes(inputTelefoneContato.value)) {
-        alert(`O telefone ${inputTelefoneContato.value} já foi inserido`)
-    } /* else if (telefones.includes(inputTelefoneContato.value)) {
-            alert(`O telefone ${inputTelefoneContato.value} já foi inserido`)
-    }*/ else {
+        alert(`O telefone ${inputNomeContato.value} já foi inserido`)
+    } else if (contatos.includes(inputNomeContato.value)) {
+        alert(`O contato ${inputNomeContato.value} já foi inserido`)
+    } else {
         contatos.push(inputNomeContato.value);
         telefones.push(parseFloat(inputTelefoneContato.value));
     
